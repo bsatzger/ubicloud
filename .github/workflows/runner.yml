@@ -90,8 +90,8 @@ jobs:
       - name: Deploy dev ssh keys
         if: ${{ inputs.lifespan_minutes > 0 }}
         run: |
-        sudo sh -c 'echo "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBF8s1PMJQfyKMrbi408/aFNXt1Ey14NIftFOtDtm2qo4JXU0dOEA5s7D8ADlskroMXtLQyPJjePHDn1OCNE/A8c= dev+ben@ubicloud.com" >> /home/runneradmin/.ssh/authorized_keys'
-        sudo sh -c 'cat /home/runneradmin/.ssh/authorized_keys'
+          sudo sh -c 'echo "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBF8s1PMJQfyKMrbi408/aFNXt1Ey14NIftFOtDtm2qo4JXU0dOEA5s7D8ADlskroMXtLQyPJjePHDn1OCNE/A8c= dev+ben@ubicloud.com" >> /home/runneradmin/.ssh/authorized_keys'
+          sudo sh -c 'cat /home/runneradmin/.ssh/authorized_keys'
 
       - name: Sleep
         if: ${{ inputs.lifespan_minutes > 0 }}
